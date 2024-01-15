@@ -34,6 +34,19 @@ const App = () => {
   // You Can Name Anything In Array Destructuring
   const [x, y] = array;
 
+  // Arrow Functions with Implicit Return
+  const greet = (lastName) => `Hey How Are You ${lastName}`;
+
+  //Arrow Function With Return KeyWord => Mandotary To Write return Keyword If Using Curly Brackets {}
+  const greet2 = (firstName) => {
+    return `Hey How Are You ${firstName}`;
+  };
+
+  //Returning Onjects From Arrow Functions
+
+  const fullName = () => ({ firstName: "Ameya", lastName: "Belvalkar" });
+  console.log(fullName());
+
   arr2.pop();
   return (
     <div>
@@ -47,6 +60,8 @@ const App = () => {
       </h1>
       <h2>{x}</h2>
       <h2>{y("Xyz")}</h2>
+      <h2>{greet2("Ameya")}</h2>
+      <h2>{greet("Belvalkar")}</h2>
     </div>
   );
 };
