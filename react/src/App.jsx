@@ -18,17 +18,35 @@ const App = () => {
     age: 27,
   };
 
+  // Destructuring Example With Objects
+  // You Cannot Name Anything It Should Match Key With Original Object
+  const { firstName, age } = state;
+  const { firstName: firstName2, age: age2 } = state2;
+
+  //Destructuring Example With Arrays
+  const array = [
+    12,
+    function (firstName) {
+      return `Hey How Are You ${firstName}`;
+    },
+  ];
+
+  // You Can Name Anything In Array Destructuring
+  const [x, y] = array;
+
   arr2.pop();
   return (
     <div>
       <h1>{arr}</h1>
       <h1>{arr2}</h1>
       <h1>
-        {state.firstName},{state.age}
+        {firstName},{age}
       </h1>
       <h1>
-        {state2.firstName},{state2.age}
+        {firstName2},{age2}
       </h1>
+      <h2>{x}</h2>
+      <h2>{y("Xyz")}</h2>
     </div>
   );
 };
