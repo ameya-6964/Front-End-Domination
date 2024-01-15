@@ -46,8 +46,13 @@ const App = () => {
 
   const fullName = () => ({ firstName: "Ameya", lastName: "Belvalkar" });
   console.log(fullName());
-
   arr2.pop();
+
+  //Map Filter Functions In React With Arrays
+
+  const numbers = [1, 2, 3, 4, 54, 5, 6];
+  const largeNumbers = [1, 2, 3, 12, 6, 9, 8, 22, 30];
+
   return (
     <div>
       <h1>{arr}</h1>
@@ -62,6 +67,19 @@ const App = () => {
       <h2>{y("Xyz")}</h2>
       <h2>{greet2("Ameya")}</h2>
       <h2>{greet("Belvalkar")}</h2>
+      <h3>Map Method Exercise</h3>
+      <ul>
+        {numbers.map((number, i) => (
+          <li style={{ listStyle: "none" }} key={i}>
+            {number}
+          </li>
+        ))}
+      </ul>
+      <h3>Filter Method Exercise</h3>
+      <h3>Numbers === {largeNumbers.join(" ,")}</h3>
+      <h3>
+        Divisible By 3 === {largeNumbers.filter((n) => n % 3 === 0).join(" ,")}
+      </h3>
     </div>
   );
 };
