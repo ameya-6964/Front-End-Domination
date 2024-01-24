@@ -33,3 +33,9 @@ Here are some fundamental HTML tags:
 11. `<div>`: Divides the content into sections, allowing you to apply styles or structure the page.
 
 12. `<span>`: Inline equivalent of the `<div>` tag, used for applying styles or scripting to a specific portion of text.
+
+## What is HTML File Extension?
+
+Extension Of Html is .html or .htm
+
+For Eg :- `index.html` or `index.htm`
