@@ -1,8 +1,10 @@
+import Card from "./components/Card";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello Components</h1>
-    </div>
+    <>
+      <Card />
+    </>
   );
 };
 
