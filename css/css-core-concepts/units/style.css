@@ -10,12 +10,29 @@ body {
   height: 100%;
 }
 
+/* Pixels (px) Does Not Change With Respect To Screen Size => Avoid Using it */
+
+/* Percentage (%) Changes With Respect To Screen Size  */
+
+/* vw and vh Are Same As Percentage Changes With Respect To Screen Size
+* % Takes Value From Parent
+* vh and vw Takes Value From Screen
+*/
+
+/* 
+ em => Depend On Elements Font Size Based On Parent Font Size
+*/
+
 .main {
-  width: 400px;
+  width: 600px;
   height: 200px;
   background-color: red;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.child {
+  font-size: 2em; /* => (2 * 20) = 40 px  */
+}
+.child2 {
+  font-size: 2rem; /* => (2 * 16) = 32 px => root Body Font Size (default 16px)*/
 }
