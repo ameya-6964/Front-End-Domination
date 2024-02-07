@@ -34,5 +34,5 @@ body {
   font-size: 2em; /* => (2 * 20) = 40 px  */
 }
 .child2 {
-  font-size: 2rem; /* => (2 * 16) = 32 px => root Body Font Size (default 16px)*/
+  font-size: 2rem; /* => (2 * 16) = 32 px => root Root(HTML tag) Font Size (default 16px)*/
 }
