@@ -28,6 +28,7 @@ body {
   height: 200px;
   background-color: red;
   font-size: 20px;
+  margin-bottom: 2rem;
 }
 
 .child {
@@ -35,4 +36,30 @@ body {
 }
 .child2 {
   font-size: 2rem; /* => (2 * 16) = 32 px => root Root(HTML tag) Font Size (default 16px)*/
+}
+
+/* 
+* max-width - Final Width Cannot Go Beyond That, If You Give Width lower then max width Then minimum Width Will Be Considered
+!For Eg :- max-width: 500px;  width: 400px; (Here 400px Width Will Br Considered)
+
+* min-width - Final Minimum Width Cannot Go Small Beyond That, If You Give Width Higher then min width Then maximum Width Will Be Considered
+!For Eg :- min-width: 500px;  width: 600px; (Here 600px Width Will Br Considered)
+
+*/
+
+#test {
+  max-width: 500px;
+  width: 400px;
+  height: 700px;
+  max-height: 400px;
+  background-color: green;
+  margin-bottom: 1rem;
+}
+
+#test2 {
+  min-width: 500px;
+  width: 600px;
+  height: 400px;
+  min-height: 300px;
+  background-color: green;
 }
