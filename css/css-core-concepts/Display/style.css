@@ -9,3 +9,33 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* 
+* BLOCK ELements :- Takes Full Width 
+* Inline Elements :- Will Not Take Full Width
+* Inline Block :- Will Convert Block Elements Into Inline and They Can Have Width And Height Since Inline Elements You Cannot Set Width
+
+*/
+
+/* p {
+  display: inline;
+   You Cannot Set Height And Width Of Inline Elements 
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+ */
+
+p {
+  display: inline-block;
+  /* You Can Set Height And Width Of Inline-Block Elements */
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+
+/* Here I Am Setting a Tags With Display Block They Will Take Full Width */
+
+a {
+  display: block;
+}
