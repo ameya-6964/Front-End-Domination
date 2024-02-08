@@ -28,6 +28,7 @@ body {
 
 #nav h4 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 #nav i {
@@ -36,4 +37,51 @@ body {
   font-size: 20px;
   padding: 10px;
   border-radius: 50%;
+  font-weight: 500;
+}
+
+#center {
+  width: 100%;
+  padding: 20px 80px;
+}
+#center h1 {
+  font-size: 4.1vw;
+  font-weight: 500;
+  line-height: 4.4vw;
+}
+#center-in {
+  width: 100%;
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+#center-in p {
+  font-size: 1.17vw;
+  font-weight: 600;
+  line-height: 1.8vw;
+}
+#right {
+  width: 20%;
+}
+.elem {
+  padding: 20px 0;
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+.elem a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.elem:hover i {
+  opacity: 1;
 }
